@@ -131,7 +131,7 @@ header nav .buttons .register {
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 3px 0;
   display: inline-block;
   border: 2px solid #efefef;
   border-radius: 16px;
@@ -162,9 +162,9 @@ input[type=text], input[type=password] {
   outline: currentcolor none medium;
   -webkit-box-shadow: none;
           box-shadow: none;
-  margin-top: 10px;
   width: 100%;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .m-button.facebook {
@@ -172,6 +172,7 @@ input[type=text], input[type=password] {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin-top: 5px;
 }
 
 .m-button.facebook svg {
@@ -180,6 +181,7 @@ input[type=text], input[type=password] {
 }
 
 .m-button.google {
+  margin-top: 10px;
   background: #fff;
   border: 1px solid #efefef;
   font-family: "Google Sans", sans-serif;
@@ -196,19 +198,15 @@ input[type=text], input[type=password] {
 
 /* Center the image and position the close button */
 .icon-container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
+  position: block;
+  width: 45px;
+  margin: 5px auto 8px;
 }
 
 .container {
-  padding: 16px;
+  margin: 0 auto;
+  width: 268px;
 }
 
 .container a {
@@ -236,7 +234,7 @@ input[type=text], input[type=password] {
   /* Enable scroll if needed */
   background-color: black;
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
   /* Black w/ opacity */
   padding-top: 60px;
 }
@@ -252,6 +250,16 @@ input[type=text], input[type=password] {
   width: 25%;
 }
 
+.modal-content h3 {
+  color: #333333;
+  font-size: 36px;
+  font-weight: 600;
+  word-break: break-word;
+  text-align: center;
+  margin: 0px auto 18px;
+  letter-spacing: -1.3px;
+}
+
 .modal-content .post-info p {
   font-size: 11px;
   text-align: center;
@@ -261,42 +269,25 @@ input[type=text], input[type=password] {
 
 .modal-content .post-info hr {
   width: 25%;
-  margin: auto;
-  border-top: 0.5px solid #dedede;
+  margin: 10px auto;
+  border-top: 1px solid #dedede;
 }
 
 .modal-content .post-info a {
   font-size: 12px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
   font-weight: bold;
   padding-top: 15px;
   margin: auto;
 }
 
-.modal-content h3 {
-  color: #333333;
-  font-size: 36px;
-  font-weight: 600;
-  word-break: break-word;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 /* The Close Button (x) */
 .close {
   position: absolute;
-  right: 25px;
-  top: 0;
+  padding-left: 180px;
+  margin: auto;
+  height: 40px;
+  width: 40px;
   color: #000;
   font-size: 35px;
   font-weight: bold;
